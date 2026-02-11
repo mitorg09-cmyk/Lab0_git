@@ -44,5 +44,5 @@ int main()
             array[i] = notExist;
     }
 
-    printf("countEl = %d", countEl);
+    printf("countEl = %d \n", countEl);
 }
