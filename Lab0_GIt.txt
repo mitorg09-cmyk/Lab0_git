@@ -1,8 +1,6 @@
-#include <stdio.h>
-
 int main()
 {
-    const int szz = 10;
+    const int szz = 10;    
     int array[szz] = {5,5,7,3,3,2,2,1,1,10};
     int max = array[0];
     for(int i=1;i < szz;i++)
@@ -23,19 +21,19 @@ int main()
                     if(array[i] == array[jx])
                     {
                         array[jx] = notExist;
-
-                    }
+                       
+                    }            
                 }
                 jx++;
             }
-        }
+        }       
         else
             unique = false;
         if(unique)
             countEl++;
         else
-            array[i] = notExist;
-    }
-
+            array[i] = notExist;      
+    }    
+    
     printf("countEl = %d", countEl);
 }
